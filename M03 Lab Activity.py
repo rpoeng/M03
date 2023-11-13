@@ -53,9 +53,3 @@ def user_input():
     roof = input("Type of roof: ")
 
     return vehicle_type, year, make, model, door, roof
-
-vehicle_type, year, make, model, door, roof = user_input()
-
-car = Automobile(vehicle_type, year, make, model, door, roof)
-
-car.vehicle_information()
