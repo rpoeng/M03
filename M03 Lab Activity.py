@@ -1,5 +1,6 @@
 #Robert K Poeng
 #M03 Lab - Case Study: Lists, Functions, and Classes 
+#This program is designed to accept user inputs on their vehicle type and will display year, make, model, door amount, and roof type.
 
 #Specifications 
 # 1.) Needs a super class called 'Vehicle', which contains attributes for vehicle type such as
@@ -52,3 +53,9 @@ def user_input():
     roof = input("Type of roof: ")
 
     return vehicle_type, year, make, model, door, roof
+
+vehicle_type, year, make, model, door, roof = user_input()
+
+car = Automobile(vehicle_type, year, make, model, door, roof)
+
+car.vehicle_information()
